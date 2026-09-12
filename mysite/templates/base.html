@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}GBI Cibadak{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>GBI Cibadak</h1>
+            <p style="font-family: 'Space Mono'; margin: 5px 0 0 0; color: #FFDE59;">Gereja Bethel Indonesia - Jemaat Cibadak</p>
+            <nav>
+                <a href="/">Beranda</a>
+                <a href="/profil">Profil</a>
+                <a href="/jadwal">Jadwal</a>
+                <a href="/berita">Berita</a>
+                <a href="/renungan">Renungan</a>
+                <a href="/khotbah">Khotbah</a>
+                <a href="/kalender">Acara</a>
+                <a href="/pendaftaran">Daftar</a>
+                <a href="/doa">Doa</a>
+                <a href="/galeri">Galeri</a>
+                <a href="/kontak">Kontak</a>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            &copy; 2026 GBI Cibadak. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

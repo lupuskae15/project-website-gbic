@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Pendaftaran - GBI Cibadak{% endblock %}
+{% block content %}
+<div class="card alt">
+    <h2>Formulir Pendaftaran Pelayanan & Baptisan</h2>
+    {% if success %}
+    <p style="background: #7ED957; padding: 10px; border: 3px solid #0F0F0F; font-weight: 900;">Terima kasih, {{ nama }}! Data pendaftaran Anda berhasil dikirim.</p>
+    {% endif %}
+    <form method="POST">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+        <label>Jenis Pendaftaran:</label>
+        <select name="kategori">
+            <option>Baptisan Air</option>
+            <option>Penyerahan Anak</option>
+            <option>Komsel / Doa Wilayah</option>
+        </select>
+        <button type="submit">Kirim Pendaftaran</button>
+    </form>
+</div>
+{% endblock %}

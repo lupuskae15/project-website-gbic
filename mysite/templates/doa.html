@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Pokok Doa - GBI Cibadak{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Layanan Pokok Doa Jemaat</h2>
+    <p>Punya pergumulan atau ingin didoakan oleh tim penggembalaan? Tuliskan pokok doa Anda di bawah:</p>
+    <form method="POST">
+        <textarea rows="4" placeholder="Tuliskan pokok doa Anda di sini..." required></textarea>
+        <button type="submit">Kirim Permohonan Doa</button>
+    </form>
+</div>
+{% endblock %}
